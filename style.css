@@ -101,6 +101,33 @@ main {
   color: #e66464;
 }
 
+.schedule{
+  width: 90%;
+  margin: 32px auto 16px;
+  padding-top: 24px;
+  border-top: 1px solid #829BB5;
+}
+
+#scheduleTitle{
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 3;
+}
+
+#scheduleTime{
+  font-size: 16px;
+  line-height: 3;
+}
+
+.description{
+  padding: 16px 24px 0 24px;
+}
+
+#scheduleDescription{
+  font-size: 16px;
+  text-align: left;
+}
+
 footer{
   height: 60px;
   width: 430px;
@@ -119,8 +146,8 @@ footer small{
   }
 
   .time {
-    width: 72%;
-    padding: 32px 24px 0 0;
+    width: 82%;
+    padding: 32px 8px 0 0;
     margin: 0 auto;
   }
 
