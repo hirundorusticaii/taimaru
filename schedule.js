@@ -1,3 +1,4 @@
+"use strict";
 // === schedule.jsonの読み込みとリアルタイム表示処理 ===
 
 // スケジュール表示対象の要素
@@ -9,7 +10,7 @@ const scheduleSection = document.querySelector(".schedule");
 let schedules = [];
 
 // JSONファイルを読み込む
-fetch("schedule.json")
+fetch("http://localhost:3000/api/schedule")
   .then(response => {
     if (!response.ok) throw new Error("JSONの読み込みに失敗しました");
     return response.json();
