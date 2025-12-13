@@ -15,29 +15,30 @@
 </head>
 
 <body>
-  <header>
-    <h1>timaru</h1>
-  </header>
-
-  <main>
-    <div class="alarmImage">
-      <img id="alarmImg" src="img/mezamashi.png" alt="目覚まし">
-    </div>
-    <section class="time">
-      <div id="currentTime">--:--:--</div>
-      <div id="currentTimeSecond">:--</div>
-    </section>
-    <section class="alarm">
-      <label>alarm: <input class="inputTime" type="time" id="alarmTime" step="1"></label>
-      <div id="message">Please enter the alarm time.</div>
-      <button id="set" class="timeButton set">set</button>
-      <button id="stop" class="timeButton reset">reset</button>
-    </section>
-  </main>
-  <footer>
-    <small>©Breeze Group</small>
-  </footer>
-
+  <div class="app">
+    <header>
+      <h1>timaru</h1>
+    </header>
+  
+    <main>
+      <div class="alarmImage">
+        <img id="alarmImg" src="img/mezamashi.png" alt="目覚まし">
+      </div>
+      <section class="time">
+        <div id="currentTime">--:--:--</div>
+        <div id="currentTimeSecond">:--</div>
+      </section>
+      <section class="alarm">
+        <label>alarm: <input class="inputTime" type="time" id="alarmTime" step="1"></label>
+        <div id="message">Please enter the alarm time.</div>
+        <button id="set" class="timeButton set">set</button>
+        <button id="stop" class="timeButton reset">reset</button>
+      </section>
+    </main>
+    <footer>
+      <small>©Breeze Group</small>
+    </footer>
+  </div>
 
   <script>
     const currentTimeDisplay = document.getElementById("currentTime");
