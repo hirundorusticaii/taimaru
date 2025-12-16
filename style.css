@@ -10,10 +10,19 @@ body{
   height: 100vh;
 }
 
+.app {
+  max-width: 440px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
 header{
   height: 60px;
-  width: 430px;
-  margin: 0 auto;
+  /* width: 430px; */
+  /* margin: 0 auto; */
   background: #829BB5;
   text-align: center;
   color: #fff;
@@ -25,10 +34,11 @@ header h1{
 }
 
 main {
-  height: calc(100vh - 120px);
-  width: 430px;
-  background: #fff;
-  margin: 0 auto;
+  /* height: calc(100vh - 120px); */
+  /* width: 430px; */
+  /* background: #fff; */
+  flex: 1;
+  /* margin: 0 auto; */
   text-align: center;
   position: relative;
 }
@@ -36,8 +46,10 @@ main {
 .alarmImage{
   width: 90px;
   position: absolute;
-  left: 86px;
-  top: 212px;
+  /* left: 86px; */
+  left: 25%;
+  top: 220px;
+  transform: translateX(-25%);
 }
 
 .alarmImage img{
@@ -59,13 +71,15 @@ main {
 
 .time {
   width: 70%;
-  padding: 32px 12px 0 0;
+  min-width: 300px;
+  padding: 32px 0 0 0;
   margin: 0 auto;
 }
 
 #currentTime, #currentTimeSecond {
   font-size: 128px;
   line-height: 1.2;
+  font-variant-numeric: tabular-nums;
   text-align: right;
 }
 
@@ -130,9 +144,9 @@ main {
 
 footer{
   height: 60px;
-  width: 430px;
+  /* width: 430px; */
   background: #fff;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 footer small{
@@ -146,16 +160,16 @@ footer small{
   }
 
   .time {
-    width: 82%;
-    padding: 32px 8px 0 0;
-    margin: 0 auto;
+    /* width: 72%; */
+    padding: 32px 24px 0 0;
+    /* margin: 0 auto; */
   }
 
   .alarmImage{
-    width: 90px;
+    /* width: 90px;
     position: absolute;
     left: 80px;
-    top: 216px;
+    top: 216px; */
   }
 
   .alarmImage img{
